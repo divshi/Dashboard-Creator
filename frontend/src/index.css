@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+html,
+body,
+#root,
+.app,
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow: auto;
+  max-height: 100vh;
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.MuiInputBase-input{
+  padding: 7px 14px !important;
+}
+.MuiFormControl-root{
+  margin-bottom: 0px !important;
+}
+.padding{
+  padding: 15px 20px;
+}
+#htmlRender{
+  height: 470px;
+  width: 90%;
+  border: none;
+}
+.uploadFile {
+  width: 70%;
+  margin-right: 8px;
+  height: 10%;
+  padding: 7px 14px;
+}
+.flex-align-center {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Dark mode focus style */
+.dark .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+/* Light mode focus style */
+.light .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: black !important;
+}
+
+.cancelButton {
+  cursor: pointer;
+  position: fixed;
+
+
+  z-index: 2001;
+  background: #000;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 30px;
+  right: 30px;
+  width: 14px;
+  height: 14px;
+  color: #fff;
+}
+
+.dark :-webkit-autofill{
+  background: transparent !important;
+  -webkit-box-shadow: 0 0 0 100px #141b2d inset !important; 
+}
+.light :-webkit-autofill{
+  background: transparent !important;
+  -webkit-box-shadow: 0 0 0 100px #fff inset !important; 
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.dark ::-webkit-scrollbar-thumb {
+  background: #141b2d;
+  border-radius: 10px;
+}
+
+.light ::-webkit-scrollbar-thumb {
+  background: #eee;
+  border-radius: 10px;
+}
+
+.primaryButton{
+  background-color: #4cceac !important; 
+  color:white !important;
+  border-radius: 50% !important;
+  height: 35px !important;
+  width: 35px !important;
+  min-width: 0 !important;
+  svg{
+    font-size: 18px;
+  }
+}
+ .primaryButton:hover{
+  background-color: #45bb9c !important; 
+  }
+
+  .confirmationPopup{
+    background-color: #141b2d !important;
+    color: white !important;
+  }
+
+  iframe {
+    border: none;
+    outline: none;
+    min-width: -webkit-fill-available;
+    min-height: -webkit-fill-available;
+}
